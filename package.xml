@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+  <title>Auto Pickup Tent</title>
+  <id>omegaplatinum.elin.autopickuptent</id>
+  <author>OmegaPlatinum</author>
+  <loadPriority>100</loadPriority>
+  <description>
+    Automatically picks up all tents in the zone.
+    ゾーン内のすべてのテントを自動的に回収します。
+    
+    [h1] Features [/h1]
+    [list]
+    [*] Automatically collects all tents in the zone when leaving.
+    [*] Automatically collects all tents in zones before they are destroyed.
+    [*] Optional dialog to confirm before picking up tents.
+    [*] Notifications for tents left behind in zones.
+    [*] Key binding to locate tents across all zones and display messages.
+    [*] Emergency key binding to collect all tents from all zones.
+    [/list]
+
+    [h1] Instructions [/h1]
+    To ensure Auto Pickup Tent works properly, the following game configuration options must be enabled:
+    [list]
+    [*] [b]Show Warning When Exiting a Map[/b]
+    [*] [b]Disable Auto-Using Stairs[/b]
+    [/list]
+    [img]https://steamuserimages-a.akamaihd.net/ugc/5164273693881875/8DE6BA1FD640745E2F229254E7A6B7BB704B383D/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false.png[/img]
+
+    [h1] Compatibility [/h1]
+    This mod works with existing save files.
+    
+    [h1] Configuration [/h1]
+    Adjust these settings via the configuration file:
+
+    [h2] Enable Auto Pickup [/h2]
+    Enable or disable the automatic pickup of tents when moving zones.
+    [code] Default: true [/code]
+
+    [h2] Enable Dialog [/h2]
+    Enable or disable a dialog prompt before picking up tents.
+    [code] Default: true [/code]
+
+    [h2] Enable Notifications [/h2]
+    Enable or disable notifications when tents are left behind in zones.
+    [code] Default: true [/code]
+
+    [h2] Find Tents Key [/h2]
+    Key binding to locate tents across all zones and display a notification.
+    [code] Default: Right Control + F [/code]
+
+    [h2] Emergency Pickup Tent Key [/h2]
+    Key binding to trigger an emergency tent pickup across all zones.
+    [code] Default: Right Control + P [/code]
+
+    [h1] Configuration File Location [/h1]
+    [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.autopickuptent.cfg [/code]
+
+    Supports Game Version: 0.23.67
+
+    [h1] 特徴 [/h1]
+    [list]
+    [*] ゾーン内のすべてのテントを自動的に回収します。
+    [*] ゾーンが削除される前に、すべてのテントを自動的に回収します。
+    [*] 回収前に確認するダイアログを表示するオプションがあります。
+    [*] ゾーン内に残されたテントに関する通知を設定可能。
+    [*] すべてのゾーンでテントを検索し、メッセージを表示するキーを設定可能。
+    [*] すべてのゾーンからテントを回収するための緊急キーの設定が可能。
+    [/list]
+
+    [h1] 手順 [/h1]
+    Auto Pickup Tent が正常に動作するためには、以下のゲーム設定を有効にする必要があります:
+    [list]
+    [*] [b]マップ退出時に確認ダイアログを表示する[/b]
+    [*] [b]階段を自動的に使用しない[/b]
+    [/list]
+    [img]https://steamuserimages-a.akamaihd.net/ugc/5164273693882225/034ED6FCCAC124AED45C2DE219CE606D510ECC96/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false.png[/img]
+
+    [h1] 互換性 [/h1]
+    このMODは既存のセーブデータと完全に互換性があり、新しいプレイスルーは不要です。
+    
+    [h2] 自動回収の有効化 [/h2]
+    ゾーン間を移動する際にテントを自動的に回収する機能を有効または無効にします。
+    [code] デフォルト: true [/code]
+
+    [h2] ダイアログの有効化 [/h2]
+    テントを自動回収する前にダイアログプロンプトを表示するかどうかを設定します。
+    [code] デフォルト: true [/code]
+
+    [h2] 通知の有効化 [/h2]
+    ゾーン内に残されたテントに関する通知を有効または無効にします。
+    [code] デフォルト: true [/code]
+
+    [h2] テント検索キー [/h2]
+    すべてのゾーンでテントを検索して通知を表示するキーを設定します。
+    [code] デフォルト: Right Control + F [/code]
+
+    [h2] 緊急テント回収キー [/h2]
+    すべてのゾーンからテントを緊急回収するキーを設定します。
+    [code] デフォルト: Right Control + P [/code]
+
+    [h1] 設定ファイルの場所 [/h1]
+    [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.autopickuptent.cfg [/code]
+
+    対応ゲームバージョン: 0.23.67
+  </description>
+  <tags>QoL</tags>
+  <visibility>Public</visibility>
+  <version>0.23.67</version>
+</Meta>
