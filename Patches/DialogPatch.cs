@@ -23,17 +23,7 @@ namespace AutoPickupTent.Patches
                 return;
             }
             
-            List<Thing> tents = new List<Thing>();
-
-            foreach (Thing thing in EClass._map.things)
-            {
-                if (thing?.trait is TraitTent == false || thing?.isNPCProperty == true)
-                {
-                    continue;
-                }
-
-                tents.Add(item: thing);
-            }
+            List<Thing> tents = TentUtils.FindTents(map: EClass._map);
 
             if (tents.Count == 0)
             {

@@ -10,6 +10,7 @@ namespace AutoPickupTent
         internal static ConfigEntry<bool> EnableNotifications;
         internal static ConfigEntry<KeyboardShortcut> FindTentsKey;
         internal static ConfigEntry<KeyboardShortcut> EmergencyPickupTentKey;
+        internal static ConfigEntry<bool> IgnorePCFactionZones;
         
         internal static void LoadConfig(ConfigFile config)
         {
@@ -71,6 +72,18 @@ namespace AutoPickupTent
                              "このキーを押すと、すべての場所を検索して、すべてのテントを自動的に回収します。\n" +
                              "设置触发在所有位置进行紧急帐篷拾取的按键。\n" +
                              "按下此键可搜索所有位置并自动拾取所有帐篷。\n"
+            );
+            
+            IgnorePCFactionZones = config.Bind(
+                section: ModInfo.Name,
+                key: "Ignore PC Faction Zones",
+                defaultValue: false,
+                description: "Enable or disable ignoring PC faction zones (home base) for tent pickup.\n" +
+                             "Set to 'true' to skip tent collection in PC faction zones, or 'false' to include them.\n" +
+                             "PC派閥ゾーン（ホームベース）のテント回収を無視するかどうかを設定します。\n" +
+                             "'true' に設定すると無視され、'false' に設定すると含まれます。\n" +
+                             "启用或禁用跳过 PC 阵营区域（基地）的帐篷回收。\n" +
+                             "设置为 'true' 将跳过，设置为 'false' 将包含。\n"
             );
         }
     }

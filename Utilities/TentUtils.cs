@@ -7,6 +7,11 @@ namespace AutoPickupTent.Utilities
     {
         public static void PickUpTents(List<Thing> tents)
         {
+            if (tents == null)
+            {
+                return;
+            }
+            
             foreach (Thing tent in tents)
             {
                 tent.SetPlaceState(newState: 0);
@@ -44,6 +49,12 @@ namespace AutoPickupTent.Utilities
             List<Thing> tents = new List<Thing>();
 
             if (map == null || map.things == null)
+            {
+                return tents;
+            }
+            
+            if (AutoPickupTentConfig.IgnorePCFactionZones?.Value == true &&
+                map.zone?.IsPCFaction == true)
             {
                 return tents;
             }

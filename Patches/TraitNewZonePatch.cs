@@ -19,17 +19,7 @@ namespace AutoPickupTent.Patches
                 c.IsAliveInCurrentZone &&
                 (__instance.ForceEnter || EClass.core.config.game.disableAutoStairs))
             {
-                List<Thing> tents = new List<Thing>();
-
-                foreach (Thing thing in EClass._map.things)
-                {
-                    if (thing.trait is TraitTent == false || thing.isNPCProperty == true)
-                    {
-                        continue;
-                    }
-
-                    tents.Add(item: thing);
-                }
+                List<Thing> tents = TentUtils.FindTents(map: __instance.zone?.map);
 
                 if (tents.Count == 0)
                 {
